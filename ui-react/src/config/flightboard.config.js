@@ -20,6 +20,6 @@ module.exports = {
   },
 
   'socket' : {
-    'endpoint' : 'http://localhost:8080',
+    'endpoint' : '52.178.92.96',
   }
 };
