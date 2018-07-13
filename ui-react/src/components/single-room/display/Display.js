@@ -85,7 +85,7 @@ class Display extends Component {
                     }
                     <div id="single-room__meeting-time">
                       {timesPresent ?
-                        new Date(parseInt(item.Appointments[0].Start, 10)).toLocaleTimeString([], {weekday: 'short', hour: '2-digit', minute: '2-digit'}) + ' - ' + new Date(parseInt(item.Appointments[0].End, 10)).toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})
+                        new Date(parseInt(item.Appointments[0].Start, 10)).toLocaleTimeString([], {weekday: 'long', hour: '2-digit', minute: '2-digit'}) + ' - ' + new Date(parseInt(item.Appointments[0].End, 10)).toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})
                         : ''
                       }
                     </div>
@@ -135,5 +135,7 @@ class Display extends Component {
   }
 
 }
+
+
 
 export default Display;
